@@ -1,0 +1,60 @@
+---
+geometry: "left=2.5cm,top=2cm,right=2cm,bottom=2cm" 
+output:
+  pdf_document: default
+  html_document: default
+sansfont: Calibri Light
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+# **\textcolor{blue}{The Adult Patient Database (APD)}**
+\vspace{-3truemm}
+### \textcolor{blue}{Adult intensive care unit}
+
+
+\vspace{1mm}
+*\textcolor{blue}{Contribution to adult patient database (APD)}*
+
+
+92.3% (167/181) of Australian and 55.2% (16/29) of New Zealand ICUs contributed to the APD
+\hfill\break
+
+* 100.0% (39/39) of Tertiary ICUs
+* 92.1% (35/38) of Metropolitan ICUs 
+* 76.8% (43/56) of Rural/regional ICUs 
+* 85.7 (66/77) of Private Hospital ICUs 
+
+**Figure 7: Contributions to the APD by sites and admissions 2010 – 2019**
+
+
+\vspace{3mm}
+*\textcolor{blue}{Contribution to adult patient database (APD)}*
+
+* Total adult admissions to the APD: 187,629(172,960 from Australia, 14,669 from New Zealand)
+* Observed hospital mortality in adult patients was 7.4% in Australia and 10.5% in New Zealand
+* Predicted risk of death in hospital for adult patients was 7.8% in Australia and 10.0% in New Zealand (based on the Australian and New Zealand Risk of Death (ANZROD) mortality prediction algorithm)
+* Continued decline in the Standardised Mortality Ratio (SMR) from 2007 - 2019
+* Variation of after-hours discharge across 39 Tertiary ICUs is reported from 2.1% to 36.6% (mean of 17.3%)
+
+
+
+*\textcolor{blue}{Source of Admission to Adult ICUs}*
+
+ANZICS APD compares ICUs by hospital classifications: tertiary, metropolitan, rural/regional and private. The classifications are based on hospital location, the level of services available and similar casemix (Figure 8). 
+
+* In 2018/19 private ICUs had a higher proportion of patients admitted from operating theatre or recovery;most of these admissions were planned admissions following elective surgery
+* Metropolitan and rural hospitals had the highest proportion of ICU admissions from emergency departments. Of the public hospitals (tertiary, metropolitan and rural), tertiary ICUs had the highest proportion of admissions from operating theatre and recovery (Figure 9)
+
+**Figure 8: Admissions to adult ICUs by hospital classification 2018/19**
+
+**Figure 9: Source of admission by hospital classification 2018/19**
+
+
+\newpage
+
+**Figure 1:** Number of ICU admissions with suspected or confirmed SARI by units.
