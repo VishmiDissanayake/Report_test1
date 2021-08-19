@@ -11,18 +11,55 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 
+# **\textcolor{blue}{Profile of Intensive Care Services across Australia and New Zealand}**
+\vspace{-3truemm}
+
+* 218 hospitals providing ICU services, with 220 ICUs
+* 140 Public Hospital ICUs, 80 Private Hospital ICUs
+* 2,500 available adult and paediatric ICU beds 
+* 190,000 admissions to adult ICUs, increasing by 6% per year
+* 13,000 paediatric admissions to ICU, increasing by 4% per year 
+
+*\hfill Ref (ANZICS CORE APD, CCR and ANZPIC Registries 2019)*
+\vspace{5truemm}
+
+**Figure 2: Profile of Intensive Care Services in 2019**
+
+\newpage
+
+# **\textcolor{blue}{Benchmarking Intensive Care Outcomes}**
+
+The ANZICS Intensive Care Registries collect and analyse data on more than 90% of adult and pediatric ICU admissions in Australia and New Zealand. They provide quarterly risk-adjusted benchmarking reports to submitting ICUs to identify variation in clinical outcomes across Tertiary, Metropolitan, Rural/Regional, Private and Pediatric peer groups. From time to time, an institution’s outcomes may appear to be outside accepted limits. In these cases, ANZICS CORE produces “Outlier Analysis Reports”.
+\vspace{5truemm}
+
+**Figure 3: Funnel plot of SMR showing a potential ICU outlier**
+\vspace{5truemm}
+
+### *\textcolor{blue}{Monitoring Outliers over Time}*
+
+
+Figure 4 shows the number of outlier reviews undertaken from 2010 until 2019 on adult ICUs. There have been no pediatric ICU outliers. Factors that influence potential outlier status include data quality, case mix and issues related to processes of care or resources. Figure 5 illustrates that data quality is one of the most common contributing factors. 
+
+\vspace{5truemm}
+
+**Figure 4:  Number of Outliers identified from 2010 - 2019**
+
+**Figure 5: Data Quality predominant factor influencing Outlier Status**
+\newpage
+
+# **\textcolor{blue}{Data completeness}**
+
+\newpage
 
 # **\textcolor{blue}{The Adult Patient Database (APD)}**
 \vspace{-3truemm}
-### \textcolor{blue}{Adult intensive care unit}
+## \textcolor{blue}{Adult intensive care unit}
 
 
-\vspace{1mm}
-*\textcolor{blue}{Contribution to adult patient database (APD)}*
-
+\vspace{4truemm}
+### *\textcolor{blue}{Contribution to adult patient database (APD)}*
 
 92.3% (167/181) of Australian and 55.2% (16/29) of New Zealand ICUs contributed to the APD
-\hfill\break
 
 * 100.0% (39/39) of Tertiary ICUs
 * 92.1% (35/38) of Metropolitan ICUs 
@@ -32,8 +69,8 @@ knitr::opts_chunk$set(echo = TRUE)
 **Figure 7: Contributions to the APD by sites and admissions 2010 – 2019**
 
 
-\vspace{3mm}
-*\textcolor{blue}{Contribution to adult patient database (APD)}*
+\vspace{3truemm}
+### *\textcolor{blue}{Summary (Adult ICU)}*
 
 * Total adult admissions to the APD: 187,629(172,960 from Australia, 14,669 from New Zealand)
 * Observed hospital mortality in adult patients was 7.4% in Australia and 10.5% in New Zealand
@@ -42,8 +79,8 @@ knitr::opts_chunk$set(echo = TRUE)
 * Variation of after-hours discharge across 39 Tertiary ICUs is reported from 2.1% to 36.6% (mean of 17.3%)
 
 
-
-*\textcolor{blue}{Source of Admission to Adult ICUs}*
+\vspace{3truemm}
+### *\textcolor{blue}{Source of Admission to Adult ICUs}*
 
 ANZICS APD compares ICUs by hospital classifications: tertiary, metropolitan, rural/regional and private. The classifications are based on hospital location, the level of services available and similar casemix (Figure 8). 
 
@@ -57,4 +94,177 @@ ANZICS APD compares ICUs by hospital classifications: tertiary, metropolitan, ru
 
 \newpage
 
-**Figure 1:** Number of ICU admissions with suspected or confirmed SARI by units.
+# **\textcolor{blue}{The Adult Patient Database (APD)}**
+
+\vspace{5truemm}
+
+### *\textcolor{blue}{Admission Diagnoses (Adult ICUs)}*
+
+Orthopedic surgery was the most common diagnosis for admission to ICU in Australia, and coronary artery bypass grafts in New Zealand. The 5 most common diagnoses are shown in Table 1.
+\vspace{7truemm}
+
+**Table 1. Top 5 admission diagnoses for patients admitted to adult ICUs**
+
+
+### *\textcolor{blue}{Observed and Predicted Mortality (Adult ICUs)}*
+
+Figure 10 shows the observed and predicted mortality by hospital classification. Both observed and predicted mortality declined from 2010 until 2016, remaining constant thereafter until a decrease in observed mortality in 
+2019 (Figure 11). 
+
+**Figure 10: Observed and predicted hospital mortality**
+
+**Figure 11: Observed and predicted hospital mortality – 10 years trend**
+
+\newpage
+
+# **\textcolor{blue}{The Adult Patient Database (APD)}**
+\vspace{5truemm}
+### *\textcolor{blue}{ANZROD Standardised Mortality Ratio (Adult ICUs)}*
+
+The Standard Mortality Ratio (SMR) is commonly used as a key indicator of quality and safety to monitor and benchmark ICU performance. The SMR is a ratio of the actual number of deaths divided by the predicted number of deaths at each ICU. The predicted number of deaths in adult ICUs is derived from the Australian and New Zealand Risk of Death (ANZROD) model.
+
+Figure 12 shows SMR for each hospital classification. Figure 13 illustrates the downward trend in SMR since 2010. A recalibrated version of ANZROD will be introduced in 2020/21.
+
+**Figure 12: ANZROD SMR (95% CI) for ICUs by hospital classification 2018/19**
+
+**Figure 13: ANZROD SMR (95% CI) – 10 years trend**
+
+### *\textcolor{blue}{Benchmarking Adult ICU outcomes}*
+
+To identify units with outcomes that are potentially significantly different to their peer group, SMRs are presented on a funnel plot. Control lines, taking the shape of a funnel, are based on the mean SMR of the group. Figure 14
+shows the 2018/19 funnel plots for each hospital classification.
+
+**Figure 14: ANZROD SMR funnel plots 2018/1**
+
+\newpage
+
+# **\textcolor{blue}{Characteristics of Admissions to Adult ICUs}**
+\vspace{5truemm}
+
+**Table 2. Characteristics for admissions to adult ICUs from APD**
+
+\newpage
+
+# **\textcolor{blue}{The Critical Care Resources (CCR) Registry}**
+\vspace{-3truemm}
+
+## \textcolor{blue}{Critical Care Resources in Adult and Pediatric ICUs}
+
+The 2018/19 CCR survey was sent to 217 Intensive Care Units (ICUs) across Australia and New Zealand and had a response rate of 85.7%. Three newly opened units (2 private and 1 metropolitan) were not sent a survey as they did not meet the 10-month minimum criteria. Analysis of bed numbers included data from all Australian and New Zealand ICUs (n=220). Reported changes over 2 or 5 years are based on consistently contributing ICUs. The collection of Critical Care resources and activity data through the annual CCR Survey provides important contextual information from all submitting ICUs. 
+
+The 2013/14 CCR Survey included questions related to financial costs of ICUs using cost blocks methods. This data was analysed and reported in ‘The financial cost of intensive care in Australia: a multicentre registry study.’ . The mean 2019-equivalent cost per patient bed day for all contributing Australian ICUs was $4,875. These findings are consistent with Independent Hospital Pricing Authority estimates of ICU costs using patient-level data and provide evidence of the validity of the CCR cost blocks methods. 
+
+
+### *\textcolor{blue}{Contribution to CCR Survey}*
+
+86.6% (n=187) of Australian and 80.0% (n=30) of New Zealand ICUs to the survey.
+
+* Tertiary ICUs: 100.0% (n=52) 
+* Metropolitan ICUs: 91.4% (n=35)
+* Rural/Regional ICUs: 87.3% (n=55)
+* Private ICUs: 72.0% (n=75)
+
+\vspace{-3truemm}
+
+*\hfill Includes sites that did not complete thew survey but provided bed data*
+
+### *\textcolor{blue}{Availability of ICU Beds}*
+
+3,145 physical and 2,562 available beds were available across 220 contributing ICUs.
+
+### *\textcolor{blue}{Admissions and ICU Days}*
+
+* 223,055 adult and paediatric admissions reported from 209 ICUs
+* 596,534 ICU days were reported from 182 ICUs.
+
+
+### *\textcolor{blue}{Changes in Critical Care Resources and Activity reported 2018/19}*
+
+* 2.4% growth in physical beds and 0.6% growth in available beds
+* 1.0% increase in admissions
+* 1.6% decrease in the proportion of invasively ventilated patients
+* 1.4% increase in ICU days
+* 11.1% increase in ICU expenditure 
+
+### *\textcolor{blue}{Regional Change in Available Beds from 2018/19}*
+
+* New Zealand had the highest increase in available beds with 15 beds (6.0% increase), followed by Victoria (8 beds) and Western Australia (5 beds) 
+* Across all jurisdictions, NSW reported the greatest reduction in available beds with 9 fewer beds (1.0% decrease), followed by Tasmania (2beds),Queensland (1 bed) and South Australia (1 bed)
+
+
+\newpage
+
+# **\textcolor{blue}{The Critical Care Resources (CCR) Registry}**
+
+### *\textcolor{blue}{Readmissions, Declined Admissions, Exit Block and After-Hours Discharge}*
+
+Figure 18 shows the median rate for exit block, declined admissions, readmissions and after hours discharge over 5 years. After hours discharge, 
+readmissions and declined admissions remain relatively constant
+
+**Figure 18: Clinical Indicators over 5 years**
+
+
+### *\textcolor{blue}{workforce}*
+
+*\textcolor{blue}{Senior Medical Officers – Gender balance}*
+
+129 ICUs (69.4%) reported having at least one practising female intensivist (n=303) with a total of 180.2 FTE, equivalent to 21% of total reported SMO 
+FTE.
+
+*\textcolor{blue}{Registered Nurses- Critical Care Qualification}*
+
+The median proportion of registered nursing FTE with critical care qualification for each ICU (n=152) was 55.9% (IQR46.0-68.2).
+
+### *\textcolor{blue}{Safety and Quality Activities – Infection control}*
+
+
+ICU Safety and Quality activities reported: 
+
+* 67.0% (n=182) of ICUs undertake rounds with an infectious disease specialist and/or microbiologist 
+* 85.3% (n=184) of ICUs have an ongoing antibiotic stewardship program 
+* 37.6% (n=181) of ICUs obtain antibiograms 
+* 72.5% (n=182) of ICUs have rounds with a pharmacist
+
+
+### *\textcolor{blue}{Ventilation}*
+
+Figure 19 shows that overall, the proportion of patients receiving invasive ventilation continues to decline. In 2018/19 the proportion of invasively 
+ventilated patients was 32.9%, down from 33.4% in 2017/18.
+
+**Figure 19: Proportion of Invasively Ventilated Patients over 5 years, by Classification**
+
+### *\textcolor{blue}{Medical Emergency Teams - Activity}*
+
+Figure 20 shows an increasing number of MET calls per 1000 ICU days across all classifications over 5 years. 
+
+**Figure 20: MET Calls per 1000 ICU Days over 5 years, by Classification**
+
+\newpage
+
+# **\textcolor{blue}{The Central Line Associated Bloodstream Infection Registry}**
+
+Figure 23 shows a funnel plot of CLABSI rate and the number of line days for each contributing ICU. By inference, larger units are likely to have a greater 
+number of line days. 
+
+Units with high or low CLABSI rates will fall outside the 95% confidence intervals. No outliers were identified in 2018/19.
+
+**Figure 23: CLABSI Funnel Plot for 2018/19**
+
+Figure 24 shows comparative rates of CLABSI across ICU levels as described by the College of Intensive Care Medicine (CICM), hospital classification, and 
+regions.
+
+Data are only shown where there are three or more contributing units to avoid site identification. 
+
+**Figure 24: Comparative CLABSI Rates for 2018/19**
+
+
+### *\textcolor{blue}{Trends over time 2014/15 – 2018/19}*
+
+Figures 25 and 26 show the comparative CLABSI rate over 5 years by region and classification. 
+
+**Figure 25: CLABSI Rates by Region 2014/15 –2018/19**
+
+**Figure 26: CLABSI Rates by Classification 2014/15 –2018/19**
+
+
+
