@@ -8,7 +8,93 @@ sansfont: Calibri Light
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(ggplot2)
+library(dplyr)
 ```
+
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+# Loading data sets
+implementation<-read.csv("F:\\NICST\\All registry report\\data\\All\\Implementation_CCA - NICR.csv", header = TRUE, na.strings = c(""," ","NA"))
+
+admission_data<-read.csv("F:\\NICST\\All registry report\\data\\All\\admission_data.csv", header = TRUE, na.strings =c(""," ","NA"))
+
+# Changing column names in implementation sheet
+names(implementation)<-as.matrix(implementation[7,])
+implementation<-implementation[-c(1:7),]
+implementation[]<-lapply(implementation,function(x)type.convert(as.character(x)))
+
+# Merging 2 data frames
+admission_data<-merge(admission_data,implementation,by.x = "unitId", by.y ="Unit ID")
+
+# Changing date format
+admission_data$admission.date_of_admission<-as.Date(as.character(admission_data$admission.date_of_admission),"%Y-%m-%d")
+
+# DIVIDING ICUS INTO DIFFERENT CATEGORIES
+
+# Medical ICU
+medical<-subset(admission_data,admission_data$`ICU Type`%in%"GICU"|admission_data$`ICU Type`%in%"MICU"|admission_data$`ICU Type`%in%"Closed ICU")
+medical_icu<-length(unique(medical$unitId))
+medical_icu_percent<-(medical_icu/length(unique(admission_data$unitId)))*100
+
+# Mixed ICU
+mixed<-subset(admission_data,admission_data$`ICU Type`%in%"Closed mixed ICU")
+mixed_icu<-length(unique(mixed$unitId))
+mixed_icu_percent<-(mixed_icu/length(unique(admission_data$unitId)))*100
+
+# Special ICU
+special<-subset(admission_data,admission_data$`ICU Type`%in%"Covid ICU")
+special_icu<-length(unique(special$unitId))
+special_icu_percent<-(special_icu/length(unique(admission_data$unitId)))*100
+
+# Number of admissions in each month
+number_admissions<-data.frame(table(format(admission_data$admission.date_of_admission, "%Y-%m")))
+```
+
+```{r, echo=FALSE, include=FALSE}
+# Number of ICUs contributed in each month
+aug<-admission_data %>%subset(format.Date(admission_data$admission.date_of_admission,"%m")=="08")
+aug_icu<-length(unique(aug$unitId));aug_icu
+
+sep<-admission_data %>%subset(format.Date(admission_data$admission.date_of_admission,"%m")=="09")
+sep_icu<-length(unique(sep$unitId));sep_icu
+
+oct<-admission_data %>%subset(format.Date(admission_data$admission.date_of_admission,"%m")=="10")
+oct_icu<-length(unique(oct$unitId));oct_icu
+
+nov<-admission_data %>%subset(format.Date(admission_data$admission.date_of_admission,"%m")=="11")
+nov_icu<-length(unique(nov$unitId));nov_icu
+
+dec<-admission_data %>%subset(format.Date(admission_data$admission.date_of_admission,"%m")=="12")
+dec_icu<-length(unique(dec$unitId));dec_icu
+
+jan<-admission_data %>%subset(format.Date(admission_data$admission.date_of_admission,"%m")=="01")
+jan_icu<-length(unique(jan$unitId));jan_icu
+
+feb<-admission_data %>%subset(format.Date(admission_data$admission.date_of_admission,"%m")=="02")
+feb_icu<-length(unique(feb$unitId));feb_icu
+
+mar<-admission_data %>%subset(format.Date(admission_data$admission.date_of_admission,"%m")=="03")
+mar_icu<-length(unique(mar$unitId));mar_icu
+
+apr<-admission_data %>%subset(format.Date(admission_data$admission.date_of_admission,"%m")=="04")
+apr_icu<-length(unique(apr$unitId));apr_icu
+
+may<-admission_data %>%subset(format.Date(admission_data$admission.date_of_admission,"%m")=="05")
+may_icu<-length(unique(may$unitId));may_icu
+
+jun<-admission_data %>%subset(format.Date(admission_data$admission.date_of_admission,"%m")=="06")
+jun_icu<-length(unique(jun$unitId));jun_icu
+
+jul<-admission_data %>%subset(format.Date(admission_data$admission.date_of_admission,"%m")=="07")
+jul_icu<-length(unique(jul$unitId));jul_icu
+
+
+number_icu<-data.frame(Month = c("2020-08","2020-09","2020-10","2020-11","2020-12","2021-01","2021-02","2021-03","2021-04","2021-05","2021-06","2021-07"),Freq = c(aug_icu,sep_icu,oct_icu,nov_icu,dec_icu,jan_icu,feb_icu,mar_icu,apr_icu,may_icu,jun_icu,jul_icu))
+```
+
+
+
 
 
 # **\textcolor{blue}{Profile of Intensive Care Services across Australia and New Zealand}**
@@ -59,15 +145,26 @@ Figure 4 shows the number of outlier reviews undertaken from 2010 until 2019 on 
 \vspace{4truemm}
 ### *\textcolor{blue}{Contribution to adult patient database (APD)}*
 
-92.3% (167/181) of Australian and 55.2% (16/29) of New Zealand ICUs contributed to the APD
+ `r length(unique(admission_data$unitId))` ICUs contributed to the APD
 
-* 100.0% (39/39) of Tertiary ICUs
-* 92.1% (35/38) of Metropolitan ICUs 
-* 76.8% (43/56) of Rural/regional ICUs 
-* 85.7 (66/77) of Private Hospital ICUs 
+* `r round(medical_icu_percent,2)`%  (`r medical_icu`/`r length(unique(admission_data$unitId))`) of Medical ICUs
+* `r round(mixed_icu_percent,2)`%  (`r mixed_icu`/`r length(unique(admission_data$unitId))`) of Mixed ICUs 
+* `r special_icu_percent`%  (`r special_icu`/`r length(unique(admission_data$unitId))`) of Special ICUs 
+
+\vspace{3truemm}
 
 **Figure 7: Contributions to the APD by sites and admissions 2010 – 2019**
 
+
+```{r ,echo=FALSE, fig.align='center', fig.height=3, fig.width=7}
+ggplot(number_icu, mapping = aes(x = Month, y = Freq))+geom_bar(stat = "identity", fill = "deepskyblue1", color = "Black")+xlab("Month")+ylab("Number of contributing ICUs")+scale_y_continuous(breaks=seq(0,12,3),limits = c(0,12))+theme_classic()+theme(axis.text.x = element_text(color = "black", angle = 10), axis.text.y = element_text(color = "black"), panel.grid.major.y = element_line(color = "Black"))
+```
+
+\vspace{3truemm}
+**Figure 8: Number of patient admissions**
+```{r ,echo=FALSE, fig.align='center', fig.height=3, fig.width=7 }
+ggplot(number_admissions, aes(Var1,Freq, group = 1))+geom_line(color = "Red", linetype = 1, size = 2)+xlab("Month")+ylab("Number of Admissions")+theme_classic()+theme(axis.text.x = element_text(color = "black", angle = 20), axis.text.y = element_text(color = "black"), panel.grid.major.y = element_line(color = "Black"))
+```
 
 \vspace{3truemm}
 ### *\textcolor{blue}{Summary (Adult ICU)}*
